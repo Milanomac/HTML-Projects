@@ -34,6 +34,10 @@ html, div {
     background-size: cover;
     background-attachment: fixed;
 }
+@media only screen and (max-width: 480px) {
+    .image1, .image2, .image3, .image4 {
+        width: 100%; }
+}
 .text1, .text4 {
     position: absolute;
     top: 50%;
