@@ -11,7 +11,7 @@ html, div {
     display: block;
 }
 .image1 {
-    background-image: url(images/img1.jpg);
+    background-image: url(images/img1.JPG);
     min-height: 100%;
 }
 .image2 {
@@ -19,11 +19,11 @@ html, div {
     min-height: 100%;
 }
 .image3 {
-    background-image: url(images/img3.jpg);
+    background-image: url(images/img3.JPG);
     min-height: 100%;
 }
 .image4 {
-    background-image: url(images/img4.jpg);
+    background-image: url(images/img4.JPG);
     min-height: 100%;
 }
 .image1, .image2, .image3, .image4{
