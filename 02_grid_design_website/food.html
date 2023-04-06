@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant website</title>
+</head>
+
+
+<body>
+
+
+<!-- GŁÓWNY GRID, ten zawiera wszystkie inne gridy-->
+
+    <div class="wrapper">
+
+<!---====================================
+    Menu żeby bylo na każdej stronie
+========================================-->
+
+            <nav class="menu">
+                <button aria-expanded="false" aria-controls="menu-list">
+                    <span class="open">☰</span>
+                    <span class="close">×</span>
+                    Menu
+                </button>
+                <ul id="menu-list">
+                    <li>
+                    <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                    <a href="food.html">Food</a>
+                    </li>
+                    <li>    
+                    <a href="drinks.html">Drinks</a>
+                    </li>
+                    <li>
+                    <a href="findus.html">Find us</a>
+                    </li>
+                    <li>
+                    <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <script>
+                const navButton = document.querySelector('button[aria-expanded]');
+            
+                function toggleNav({ target }) {
+                  const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+                  navButton.setAttribute('aria-expanded', !expanded);
+                }
+            
+                navButton.addEventListener('click', toggleNav);
+            </script>  
+    </div>
+<!---================================================
+    Dalej to juz to co chcę dać na każdej ze stron
+===================================================-->
+    <div class="food_pic">
+    <img src="images/image3.JPEG">
+    </div>
+</body>
+</html>

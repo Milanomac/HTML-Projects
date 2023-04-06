@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant website</title>
+</head>
+
+
+<body>
+
+
+<!-- GŁÓWNY GRID, ten zawiera wszystkie inne gridy-->
+    <div class="wrapper">
+
+            <nav class="menu">
+                <button aria-expanded="false" aria-controls="menu-list">
+                    <span class="open">☰</span>
+                    <span class="close">×</span>
+                    Menu
+                </button>
+                <ul id="menu-list">
+                    <li>
+                    <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                    <a href="food.html">Food</a>
+                    </li>
+                    <li>    
+                    <a href="drinks.html">Drinks</a>
+                    </li>
+                    <li>
+                    <a href="findus.html">Find us</a>
+                    </li>
+                    <li>
+                    <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Pierwszy GRID-->
+            <div class="top">
+                <header class="big_pic_header">
+                    <h1>Thai & Vietnam Goodies</h1>
+                    <p>Best Pad Thai in town!</p>
+                </header>
+                <div class="small_pic_upper_header">
+                    <p class="price">$9.99</p>
+                    <p>Pad Thai Classic</p>
+                </div>
+                <div class="small_pic_lower_header">
+                    <p class="price">$8.99</p>
+                    <p>Pho</p>
+                </div>
+            </div>
+            <!-- Sekcja tekst-->
+            <div class="image1">
+            <section class="section1">
+            <h1>The best Vietnameese and Thai cousine</h1>
+            <p>Vietnamese cuisine encompasses the foods and beverages of Vietnam, and features a combination of five fundamental tastes (Vietnamese: ngũ vị) in overall meals. Each Vietnamese dish has a distinctive flavor which reflects one or more of these elements. French cuisine has also had a major influence due to the French colonization of Vietnam.</p>
+            </section>
+            </div>
+
+
+<!-- DRUGI GRID-->
+        <section class="section2"> 
+            <div class="feature">
+                <span class="icon">🍲</span>
+                    <h3>Pad Thai</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+            
+            <div class="feature">
+                <span class="icon">🍄</span>
+                    <h3>Thai mushrooms</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+
+            <div class="feature">
+                <span class="icon">🍺</span>
+                    <h3>Beer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+
+            <div class="feature">
+                <span class="icon">🍷</span>
+                    <h3>Wine</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+
+        </section>
+        
+    </div>
+
+
+
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+    
+        function toggleNav({ target }) {
+          const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+          navButton.setAttribute('aria-expanded', !expanded);
+        }
+    
+        navButton.addEventListener('click', toggleNav);
+    </script>  
+</body>
+</html>
